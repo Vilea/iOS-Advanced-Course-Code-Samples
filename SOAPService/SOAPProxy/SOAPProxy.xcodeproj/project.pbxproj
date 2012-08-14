@@ -1,0 +1,281 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1AEE962015DA49C100DD3DF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AEE961F15DA49C100DD3DF5 /* Foundation.framework */; };
+		1AEE964015DA4A4700DD3DF5 /* CurrencyConvertor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE963515DA4A4700DD3DF5 /* CurrencyConvertor.m */; };
+		1AEE964115DA4A4700DD3DF5 /* NSDate+ISO8601Parsing.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE963715DA4A4700DD3DF5 /* NSDate+ISO8601Parsing.m */; };
+		1AEE964215DA4A4700DD3DF5 /* NSDate+ISO8601Unparsing.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE963915DA4A4700DD3DF5 /* NSDate+ISO8601Unparsing.m */; };
+		1AEE964315DA4A4700DD3DF5 /* USAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE963B15DA4A4700DD3DF5 /* USAdditions.m */; };
+		1AEE964415DA4A4700DD3DF5 /* USGlobals.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE963D15DA4A4700DD3DF5 /* USGlobals.m */; };
+		1AEE964515DA4A4700DD3DF5 /* xsd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE963F15DA4A4700DD3DF5 /* xsd.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1AEE961A15DA49C100DD3DF5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1AEE961C15DA49C100DD3DF5 /* libSOAPProxy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSOAPProxy.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AEE961F15DA49C100DD3DF5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1AEE962315DA49C100DD3DF5 /* SOAPProxy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SOAPProxy-Prefix.pch"; sourceTree = "<group>"; };
+		1AEE963415DA4A4700DD3DF5 /* CurrencyConvertor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CurrencyConvertor.h; path = Proxy/CurrencyConvertor.h; sourceTree = SOURCE_ROOT; };
+		1AEE963515DA4A4700DD3DF5 /* CurrencyConvertor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CurrencyConvertor.m; path = Proxy/CurrencyConvertor.m; sourceTree = SOURCE_ROOT; };
+		1AEE963615DA4A4700DD3DF5 /* NSDate+ISO8601Parsing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+ISO8601Parsing.h"; path = "Proxy/NSDate+ISO8601Parsing.h"; sourceTree = SOURCE_ROOT; };
+		1AEE963715DA4A4700DD3DF5 /* NSDate+ISO8601Parsing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+ISO8601Parsing.m"; path = "Proxy/NSDate+ISO8601Parsing.m"; sourceTree = SOURCE_ROOT; };
+		1AEE963815DA4A4700DD3DF5 /* NSDate+ISO8601Unparsing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+ISO8601Unparsing.h"; path = "Proxy/NSDate+ISO8601Unparsing.h"; sourceTree = SOURCE_ROOT; };
+		1AEE963915DA4A4700DD3DF5 /* NSDate+ISO8601Unparsing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+ISO8601Unparsing.m"; path = "Proxy/NSDate+ISO8601Unparsing.m"; sourceTree = SOURCE_ROOT; };
+		1AEE963A15DA4A4700DD3DF5 /* USAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = USAdditions.h; path = Proxy/USAdditions.h; sourceTree = SOURCE_ROOT; };
+		1AEE963B15DA4A4700DD3DF5 /* USAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = USAdditions.m; path = Proxy/USAdditions.m; sourceTree = SOURCE_ROOT; };
+		1AEE963C15DA4A4700DD3DF5 /* USGlobals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = USGlobals.h; path = Proxy/USGlobals.h; sourceTree = SOURCE_ROOT; };
+		1AEE963D15DA4A4700DD3DF5 /* USGlobals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = USGlobals.m; path = Proxy/USGlobals.m; sourceTree = SOURCE_ROOT; };
+		1AEE963E15DA4A4700DD3DF5 /* xsd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xsd.h; path = Proxy/xsd.h; sourceTree = SOURCE_ROOT; };
+		1AEE963F15DA4A4700DD3DF5 /* xsd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = xsd.m; path = Proxy/xsd.m; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1AEE961915DA49C100DD3DF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AEE962015DA49C100DD3DF5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1AEE961115DA49C100DD3DF5 = {
+			isa = PBXGroup;
+			children = (
+				1AEE962115DA49C100DD3DF5 /* SOAPProxy */,
+				1AEE961E15DA49C100DD3DF5 /* Frameworks */,
+				1AEE961D15DA49C100DD3DF5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1AEE961D15DA49C100DD3DF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AEE961C15DA49C100DD3DF5 /* libSOAPProxy.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AEE961E15DA49C100DD3DF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1AEE961F15DA49C100DD3DF5 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1AEE962115DA49C100DD3DF5 /* SOAPProxy */ = {
+			isa = PBXGroup;
+			children = (
+				1AEE962D15DA49C800DD3DF5 /* Proxy */,
+				1AEE962215DA49C100DD3DF5 /* Supporting Files */,
+			);
+			path = SOAPProxy;
+			sourceTree = "<group>";
+		};
+		1AEE962215DA49C100DD3DF5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1AEE962315DA49C100DD3DF5 /* SOAPProxy-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1AEE962D15DA49C800DD3DF5 /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				1AEE963415DA4A4700DD3DF5 /* CurrencyConvertor.h */,
+				1AEE963515DA4A4700DD3DF5 /* CurrencyConvertor.m */,
+				1AEE963615DA4A4700DD3DF5 /* NSDate+ISO8601Parsing.h */,
+				1AEE963715DA4A4700DD3DF5 /* NSDate+ISO8601Parsing.m */,
+				1AEE963815DA4A4700DD3DF5 /* NSDate+ISO8601Unparsing.h */,
+				1AEE963915DA4A4700DD3DF5 /* NSDate+ISO8601Unparsing.m */,
+				1AEE963A15DA4A4700DD3DF5 /* USAdditions.h */,
+				1AEE963B15DA4A4700DD3DF5 /* USAdditions.m */,
+				1AEE963C15DA4A4700DD3DF5 /* USGlobals.h */,
+				1AEE963D15DA4A4700DD3DF5 /* USGlobals.m */,
+				1AEE963E15DA4A4700DD3DF5 /* xsd.h */,
+				1AEE963F15DA4A4700DD3DF5 /* xsd.m */,
+			);
+			name = Proxy;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1AEE961B15DA49C100DD3DF5 /* SOAPProxy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AEE962A15DA49C100DD3DF5 /* Build configuration list for PBXNativeTarget "SOAPProxy" */;
+			buildPhases = (
+				1AEE961815DA49C100DD3DF5 /* Sources */,
+				1AEE961915DA49C100DD3DF5 /* Frameworks */,
+				1AEE961A15DA49C100DD3DF5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SOAPProxy;
+			productName = SOAPProxy;
+			productReference = 1AEE961C15DA49C100DD3DF5 /* libSOAPProxy.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1AEE961315DA49C100DD3DF5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Vilea GmbH";
+			};
+			buildConfigurationList = 1AEE961615DA49C100DD3DF5 /* Build configuration list for PBXProject "SOAPProxy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1AEE961115DA49C100DD3DF5;
+			productRefGroup = 1AEE961D15DA49C100DD3DF5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1AEE961B15DA49C100DD3DF5 /* SOAPProxy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1AEE961815DA49C100DD3DF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AEE964015DA4A4700DD3DF5 /* CurrencyConvertor.m in Sources */,
+				1AEE964115DA4A4700DD3DF5 /* NSDate+ISO8601Parsing.m in Sources */,
+				1AEE964215DA4A4700DD3DF5 /* NSDate+ISO8601Unparsing.m in Sources */,
+				1AEE964315DA4A4700DD3DF5 /* USAdditions.m in Sources */,
+				1AEE964415DA4A4700DD3DF5 /* USGlobals.m in Sources */,
+				1AEE964515DA4A4700DD3DF5 /* xsd.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1AEE962815DA49C100DD3DF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1AEE962915DA49C100DD3DF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1AEE962B15DA49C100DD3DF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/SOAPProxy.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SOAPProxy/SOAPProxy-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1AEE962C15DA49C100DD3DF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/SOAPProxy.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SOAPProxy/SOAPProxy-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1AEE961615DA49C100DD3DF5 /* Build configuration list for PBXProject "SOAPProxy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AEE962815DA49C100DD3DF5 /* Debug */,
+				1AEE962915DA49C100DD3DF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AEE962A15DA49C100DD3DF5 /* Build configuration list for PBXNativeTarget "SOAPProxy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AEE962B15DA49C100DD3DF5 /* Debug */,
+				1AEE962C15DA49C100DD3DF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1AEE961315DA49C100DD3DF5 /* Project object */;
+}

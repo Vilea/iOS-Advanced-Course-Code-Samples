@@ -1,0 +1,361 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1AEE95F515DA48B300DD3DF5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AEE95F415DA48B300DD3DF5 /* UIKit.framework */; };
+		1AEE95F715DA48B300DD3DF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AEE95F615DA48B300DD3DF5 /* Foundation.framework */; };
+		1AEE95F915DA48B300DD3DF5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AEE95F815DA48B300DD3DF5 /* CoreGraphics.framework */; };
+		1AEE95FF15DA48B300DD3DF5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1AEE95FD15DA48B300DD3DF5 /* InfoPlist.strings */; };
+		1AEE960115DA48B300DD3DF5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE960015DA48B300DD3DF5 /* main.m */; };
+		1AEE960515DA48B300DD3DF5 /* VIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE960415DA48B300DD3DF5 /* VIAppDelegate.m */; };
+		1AEE960815DA48B300DD3DF5 /* VIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE960715DA48B300DD3DF5 /* VIViewController.m */; };
+		1AEE960B15DA48B400DD3DF5 /* VIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AEE960915DA48B400DD3DF5 /* VIViewController.xib */; };
+		1AEE964F15DA4AFD00DD3DF5 /* libSOAPProxy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AEE964E15DA4AF500DD3DF5 /* libSOAPProxy.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1AEE964D15DA4AF500DD3DF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AEE964615DA4AF500DD3DF5 /* SOAPProxy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1AEE961C15DA49C100DD3DF5;
+			remoteInfo = SOAPProxy;
+		};
+		1AEE965115DA4F2F00DD3DF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AEE964615DA4AF500DD3DF5 /* SOAPProxy.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AEE961B15DA49C100DD3DF5;
+			remoteInfo = SOAPProxy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1AEE95F015DA48B300DD3DF5 /* SOAPService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOAPService.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AEE95F415DA48B300DD3DF5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1AEE95F615DA48B300DD3DF5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1AEE95F815DA48B300DD3DF5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1AEE95FC15DA48B300DD3DF5 /* SOAPService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SOAPService-Info.plist"; sourceTree = "<group>"; };
+		1AEE95FE15DA48B300DD3DF5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1AEE960015DA48B300DD3DF5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1AEE960215DA48B300DD3DF5 /* SOAPService-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SOAPService-Prefix.pch"; sourceTree = "<group>"; };
+		1AEE960315DA48B300DD3DF5 /* VIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VIAppDelegate.h; sourceTree = "<group>"; };
+		1AEE960415DA48B300DD3DF5 /* VIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VIAppDelegate.m; sourceTree = "<group>"; };
+		1AEE960615DA48B300DD3DF5 /* VIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VIViewController.h; sourceTree = "<group>"; };
+		1AEE960715DA48B300DD3DF5 /* VIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VIViewController.m; sourceTree = "<group>"; };
+		1AEE960A15DA48B400DD3DF5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/VIViewController.xib; sourceTree = "<group>"; };
+		1AEE964615DA4AF500DD3DF5 /* SOAPProxy.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SOAPProxy.xcodeproj; path = SOAPProxy/SOAPProxy.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1AEE95ED15DA48B300DD3DF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AEE964F15DA4AFD00DD3DF5 /* libSOAPProxy.a in Frameworks */,
+				1AEE95F515DA48B300DD3DF5 /* UIKit.framework in Frameworks */,
+				1AEE95F715DA48B300DD3DF5 /* Foundation.framework in Frameworks */,
+				1AEE95F915DA48B300DD3DF5 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1AEE95E515DA48B300DD3DF5 = {
+			isa = PBXGroup;
+			children = (
+				1AEE964615DA4AF500DD3DF5 /* SOAPProxy.xcodeproj */,
+				1AEE95FA15DA48B300DD3DF5 /* SOAPService */,
+				1AEE95F315DA48B300DD3DF5 /* Frameworks */,
+				1AEE95F115DA48B300DD3DF5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1AEE95F115DA48B300DD3DF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AEE95F015DA48B300DD3DF5 /* SOAPService.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AEE95F315DA48B300DD3DF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1AEE95F415DA48B300DD3DF5 /* UIKit.framework */,
+				1AEE95F615DA48B300DD3DF5 /* Foundation.framework */,
+				1AEE95F815DA48B300DD3DF5 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1AEE95FA15DA48B300DD3DF5 /* SOAPService */ = {
+			isa = PBXGroup;
+			children = (
+				1AEE960315DA48B300DD3DF5 /* VIAppDelegate.h */,
+				1AEE960415DA48B300DD3DF5 /* VIAppDelegate.m */,
+				1AEE960615DA48B300DD3DF5 /* VIViewController.h */,
+				1AEE960715DA48B300DD3DF5 /* VIViewController.m */,
+				1AEE960915DA48B400DD3DF5 /* VIViewController.xib */,
+				1AEE95FB15DA48B300DD3DF5 /* Supporting Files */,
+			);
+			path = SOAPService;
+			sourceTree = "<group>";
+		};
+		1AEE95FB15DA48B300DD3DF5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1AEE95FC15DA48B300DD3DF5 /* SOAPService-Info.plist */,
+				1AEE95FD15DA48B300DD3DF5 /* InfoPlist.strings */,
+				1AEE960015DA48B300DD3DF5 /* main.m */,
+				1AEE960215DA48B300DD3DF5 /* SOAPService-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1AEE964715DA4AF500DD3DF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AEE964E15DA4AF500DD3DF5 /* libSOAPProxy.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1AEE95EF15DA48B300DD3DF5 /* SOAPService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AEE960E15DA48B400DD3DF5 /* Build configuration list for PBXNativeTarget "SOAPService" */;
+			buildPhases = (
+				1AEE95EC15DA48B300DD3DF5 /* Sources */,
+				1AEE95ED15DA48B300DD3DF5 /* Frameworks */,
+				1AEE95EE15DA48B300DD3DF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1AEE965215DA4F2F00DD3DF5 /* PBXTargetDependency */,
+			);
+			name = SOAPService;
+			productName = SOAPService;
+			productReference = 1AEE95F015DA48B300DD3DF5 /* SOAPService.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1AEE95E715DA48B300DD3DF5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = VI;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Vilea GmbH";
+			};
+			buildConfigurationList = 1AEE95EA15DA48B300DD3DF5 /* Build configuration list for PBXProject "SOAPService" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1AEE95E515DA48B300DD3DF5;
+			productRefGroup = 1AEE95F115DA48B300DD3DF5 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1AEE964715DA4AF500DD3DF5 /* Products */;
+					ProjectRef = 1AEE964615DA4AF500DD3DF5 /* SOAPProxy.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1AEE95EF15DA48B300DD3DF5 /* SOAPService */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1AEE964E15DA4AF500DD3DF5 /* libSOAPProxy.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSOAPProxy.a;
+			remoteRef = 1AEE964D15DA4AF500DD3DF5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1AEE95EE15DA48B300DD3DF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AEE95FF15DA48B300DD3DF5 /* InfoPlist.strings in Resources */,
+				1AEE960B15DA48B400DD3DF5 /* VIViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1AEE95EC15DA48B300DD3DF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AEE960115DA48B300DD3DF5 /* main.m in Sources */,
+				1AEE960515DA48B300DD3DF5 /* VIAppDelegate.m in Sources */,
+				1AEE960815DA48B300DD3DF5 /* VIViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1AEE965215DA4F2F00DD3DF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SOAPProxy;
+			targetProxy = 1AEE965115DA4F2F00DD3DF5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1AEE95FD15DA48B300DD3DF5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AEE95FE15DA48B300DD3DF5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1AEE960915DA48B400DD3DF5 /* VIViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AEE960A15DA48B400DD3DF5 /* en */,
+			);
+			name = VIViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1AEE960C15DA48B400DD3DF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1AEE960D15DA48B400DD3DF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1AEE960F15DA48B400DD3DF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SOAPService/SOAPService-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"$(PROJECT_DIR)/SOAPProxy/Proxy\"",
+					/usr/include/libxml2,
+				);
+				INFOPLIST_FILE = "SOAPService/SOAPService-Info.plist";
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1AEE961015DA48B400DD3DF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SOAPService/SOAPService-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"$(PROJECT_DIR)/SOAPProxy/Proxy\"",
+					/usr/include/libxml2,
+				);
+				INFOPLIST_FILE = "SOAPService/SOAPService-Info.plist";
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1AEE95EA15DA48B300DD3DF5 /* Build configuration list for PBXProject "SOAPService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AEE960C15DA48B400DD3DF5 /* Debug */,
+				1AEE960D15DA48B400DD3DF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AEE960E15DA48B400DD3DF5 /* Build configuration list for PBXNativeTarget "SOAPService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AEE960F15DA48B400DD3DF5 /* Debug */,
+				1AEE961015DA48B400DD3DF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1AEE95E715DA48B300DD3DF5 /* Project object */;
+}
