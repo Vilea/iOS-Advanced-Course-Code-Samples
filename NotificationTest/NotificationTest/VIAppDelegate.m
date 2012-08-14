@@ -56,7 +56,7 @@
 #endif
 }
 
--(void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
 {
 #ifdef DEBUG
   NSLog(@"[%@] Received remote notification: %@", NSStringFromClass([self class]), userInfo);

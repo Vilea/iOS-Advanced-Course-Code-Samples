@@ -354,6 +354,7 @@
 				1AEE961015DA48B400DD3DF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
