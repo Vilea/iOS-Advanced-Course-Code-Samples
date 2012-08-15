@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="562" systemVersion="11A511" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Animal">
+        <attribute name="legs" optional="YES" attributeType="Integer 16" minValueString="1" maxValueString="8" defaultValueString="4"/>
+        <attribute name="name" optional="YES" attributeType="String" defaultValueString="Unnamed"/>
+    </entity>
+    <elements>
+        <element name="Animal" positionX="-3096" positionY="-5130" width="128" height="75"/>
+    </elements>
+</model>
