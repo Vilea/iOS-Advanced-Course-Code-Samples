@@ -7,7 +7,6 @@
 //
 
 #import "VIAppDelegate.h"
-
 #import "VIViewController.h"
 
 @implementation VIAppDelegate
@@ -19,6 +18,18 @@
   self.viewController = [[VIViewController alloc] initWithNibName:@"VIViewController" bundle:nil];
   self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+  
+  [VIPushNotification sharedInstance].delegate = self;
+#ifdef DEBUG
+	[VIPushNotification sharedInstance].enableDebugOutput = YES;
+	//[VIPushNotification sharedInstance].shouldSendDebugInformation = YES;
+#endif
+  
+	//Register this application for notifications
+	[[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge |
+                                                                         UIRemoteNotificationTypeSound |
+                                                                         UIRemoteNotificationTypeAlert)];
+
     return YES;
 }
 
@@ -56,10 +67,57 @@
 #endif
 }
 
+#pragma mark -
+#pragma mark Push Notification delegate
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)_deviceToken {
+  
+	//check remote notification enabled or not
+	if ([application enabledRemoteNotificationTypes] == 0) {
+#ifdef DEBUG
+    NSLog(@"[%@] Notifications are disabled for this application", NSStringFromClass([self class]));
+#endif
+		return;
+	}
+  
+	[[VIPushNotification sharedInstance] registerWithToken:_deviceToken];
+}
+
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *) error {
+#ifdef DEBUG
+  NSLog(@"[%@] Error registering for APN: %@", NSStringFromClass([self class]), error);
+#endif
+}
+
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
 {
 #ifdef DEBUG
-  NSLog(@"[%@] Received remote notification: %@", NSStringFromClass([self class]), userInfo);
+  NSLog(@"[%@] Remote notification received: %@", NSStringFromClass([self class]), [userInfo description]);
+#endif
+	id alertObject = [[userInfo objectForKey:@"aps"] objectForKey:@"alert"];
+	NSString *body = @"";
+	if ([alertObject isKindOfClass:[NSDictionary class]]){
+		body = [(NSDictionary*)alertObject objectForKey:@"body"];
+	}
+	else {
+		body = (NSString*)alertObject;
+	}
+
+#ifdef DEBUG
+  NSLog(@"[%@] Notification body: %@", NSStringFromClass([self class]), body);
+#endif
+}
+
+#pragma mark -
+#pragma mark VIPushNotificationDelegate
+- (void)didRegisterForPushNotifications{
+#ifdef DEBUG
+  NSLog(@"[%@] Successfully registered for APNs", NSStringFromClass([self class]));
+#endif
+}
+
+- (void)failedToRegisterForPushNotifications:(NSError*)error{
+#ifdef DEBUG
+  NSLog(@"[%@] Failed to register for APNs", NSStringFromClass([self class]));
 #endif
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A45879315DB876C00184491 /* VIPushNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A45879215DB876C00184491 /* VIPushNotification.m */; };
 		1AEE966715DA675900DD3DF5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AEE966615DA675900DD3DF5 /* UIKit.framework */; };
 		1AEE966915DA675900DD3DF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AEE966815DA675900DD3DF5 /* Foundation.framework */; };
 		1AEE966B15DA675900DD3DF5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AEE966A15DA675900DD3DF5 /* CoreGraphics.framework */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A45879115DB876C00184491 /* VIPushNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VIPushNotification.h; sourceTree = "<group>"; };
+		1A45879215DB876C00184491 /* VIPushNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VIPushNotification.m; sourceTree = "<group>"; };
 		1AEE966215DA675900DD3DF5 /* NotificationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotificationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AEE966615DA675900DD3DF5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1AEE966815DA675900DD3DF5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -79,6 +82,8 @@
 			children = (
 				1AEE967515DA675900DD3DF5 /* VIAppDelegate.h */,
 				1AEE967615DA675900DD3DF5 /* VIAppDelegate.m */,
+				1A45879115DB876C00184491 /* VIPushNotification.h */,
+				1A45879215DB876C00184491 /* VIPushNotification.m */,
 				1AEE967815DA675900DD3DF5 /* VIViewController.h */,
 				1AEE967915DA675900DD3DF5 /* VIViewController.m */,
 				1AEE967B15DA675900DD3DF5 /* VIViewController.xib */,
@@ -165,6 +170,7 @@
 				1AEE967315DA675900DD3DF5 /* main.m in Sources */,
 				1AEE967715DA675900DD3DF5 /* VIAppDelegate.m in Sources */,
 				1AEE967A15DA675900DD3DF5 /* VIViewController.m in Sources */,
+				1A45879315DB876C00184491 /* VIPushNotification.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +286,7 @@
 				1AEE968215DA675900DD3DF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

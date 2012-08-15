@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "VIPushNotification.h"
 
 @class VIViewController;
 
-@interface VIAppDelegate : UIResponder <UIApplicationDelegate>
+@interface VIAppDelegate : UIResponder <UIApplicationDelegate, VIPushNotificationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
