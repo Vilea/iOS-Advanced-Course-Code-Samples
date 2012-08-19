@@ -12,6 +12,7 @@
 @interface VIViewController : UIViewController
 
 /** @name Properties */
+
 /** The name */
 @property (nonatomic, strong) NSString *name;
 

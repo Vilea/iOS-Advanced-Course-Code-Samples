@@ -11,12 +11,20 @@
 @implementation CountOperation
 
 
-- (void)main{
-    int i;
-    for (i = 0; i < 5; i++){
-        sleep(1);
-        NSLog(@"[Operation %@] %d", self, i);
-    } 
+- (void)main
+{
+  int i;
+  for (i = 0; i < 5; i++){
+    sleep(1);
+    
+    if ([self isCancelled])
+    {
+      NSLog(@"[Opertaion %@] I was killed :(", self);
+      return;
+    }
+    
+    NSLog(@"[Operation %@] %d", self, i);
+  }
 }
 
 @end

@@ -145,7 +145,7 @@
 		1AEE961315DA49C100DD3DF5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0440;
+				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Vilea GmbH";
 			};
 			buildConfigurationList = 1AEE961615DA49C100DD3DF5 /* Build configuration list for PBXProject "SOAPProxy" */;

@@ -41,7 +41,8 @@
 - (IBAction)updateRate:(id)sender {
   // retrieve the current rate in background
   dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-    float res = [self _conversionRateFrom:CurrencyConvertor_Currency_USD to:CurrencyConvertor_Currency_EUR];
+    float res = [self _conversionRateFrom:CurrencyConvertor_Currency_USD
+                                       to:CurrencyConvertor_Currency_EUR];
       
     if (res != 0.0)
     {
@@ -65,6 +66,9 @@
   params.ToCurrency = to;
   
   CurrencyConvertorSoap12Binding *service = [[CurrencyConvertorSoap12Binding alloc] initWithAddress:@"http://www.webservicex.com/CurrencyConvertor.asmx?wsdl"];
+  
+  // enable debug logging...
+  service.logXMLInOut = YES;
   
   [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
   CurrencyConvertorSoap12BindingResponse *response = [service ConversionRateUsingParameters:params];

@@ -16,7 +16,6 @@
 		1ABCCE6415DBB91C00ACD356 /* VIViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1ABCCE6315DBB91C00ACD356 /* VIViewController.mm */; };
 		1ABCCE6715DBB91C00ACD356 /* VIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ABCCE6515DBB91C00ACD356 /* VIViewController.xib */; };
 		1ABCCE6F15DBB93500ACD356 /* Person.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1ABCCE6D15DBB93400ACD356 /* Person.cpp */; };
-		1ABCCE7515DBBBB200ACD356 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ABCCE7415DBBBB200ACD356 /* libstdc++.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +34,6 @@
 		1ABCCE6615DBB91C00ACD356 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/VIViewController.xib; sourceTree = "<group>"; };
 		1ABCCE6D15DBB93400ACD356 /* Person.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Person.cpp; path = Cpp/Person.cpp; sourceTree = "<group>"; };
 		1ABCCE6E15DBB93400ACD356 /* Person.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Person.h; path = Cpp/Person.h; sourceTree = "<group>"; };
-		1ABCCE7415DBBBB200ACD356 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +41,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1ABCCE7515DBBBB200ACD356 /* libstdc++.dylib in Frameworks */,
 				1ABCCE5115DBB91C00ACD356 /* UIKit.framework in Frameworks */,
 				1ABCCE5315DBB91C00ACD356 /* Foundation.framework in Frameworks */,
 				1ABCCE5515DBB91C00ACD356 /* CoreGraphics.framework in Frameworks */,
@@ -56,7 +53,6 @@
 		1ABCCE4115DBB91C00ACD356 = {
 			isa = PBXGroup;
 			children = (
-				1ABCCE7415DBBBB200ACD356 /* libstdc++.dylib */,
 				1ABCCE5615DBB91C00ACD356 /* ObjectiveCpp */,
 				1ABCCE4F15DBB91C00ACD356 /* Frameworks */,
 				1ABCCE4D15DBB91C00ACD356 /* Products */,

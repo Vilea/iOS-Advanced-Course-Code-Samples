@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+  [super viewDidLoad];
 	
   NSError *error = nil;
   float res = [self _divideTwelveBy:34 error:&error];
@@ -26,16 +26,20 @@
   {
     NSLog(@"[%@] Succes: %.2f", NSStringFromClass([self class]), res);
   }
+  else
+  {
+    [[ErrorManager sharedInstance] reportError:error];
+  }
   
   [self _performSomeTaskWithArg:0 errorHandler:^(NSError *error){
-    NSLog(@"[%@] Error: %@", NSStringFromClass([self class]), error);
+    [[ErrorManager sharedInstance] reportError:error];
   }];
 }
 
 - (void)didReceiveMemoryWarning
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+  [super didReceiveMemoryWarning];
+  // Dispose of any resources that can be recreated.
 }
 
 
@@ -59,7 +63,7 @@
   {
     NSDictionary *userInfo = [NSDictionary dictionaryWithObjectsAndKeys:@"Trying to performing some task on 0", NSLocalizedDescriptionKey, nil];
     NSError *error = [[NSError alloc] initWithDomain:@"MyAppDomain" code:1 userInfo:userInfo];
-
+    
     // execute the error handler
     handleError(error);
   }

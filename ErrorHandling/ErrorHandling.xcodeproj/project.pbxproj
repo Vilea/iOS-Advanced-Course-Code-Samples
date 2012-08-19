@@ -15,6 +15,7 @@
 		1ABCCE0815DBA1E200ACD356 /* VIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABCCE0715DBA1E200ACD356 /* VIAppDelegate.m */; };
 		1ABCCE0B15DBA1E200ACD356 /* VIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABCCE0A15DBA1E200ACD356 /* VIViewController.m */; };
 		1ABCCE0E15DBA1E200ACD356 /* VIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ABCCE0C15DBA1E200ACD356 /* VIViewController.xib */; };
+		1ABCCEA615DCC38800ACD356 /* ErrorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABCCEA515DCC38800ACD356 /* ErrorManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		1ABCCE0915DBA1E200ACD356 /* VIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VIViewController.h; sourceTree = "<group>"; };
 		1ABCCE0A15DBA1E200ACD356 /* VIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VIViewController.m; sourceTree = "<group>"; };
 		1ABCCE0D15DBA1E200ACD356 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/VIViewController.xib; sourceTree = "<group>"; };
+		1ABCCEA415DCC38800ACD356 /* ErrorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorManager.h; sourceTree = "<group>"; };
+		1ABCCEA515DCC38800ACD356 /* ErrorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,8 @@
 				1ABCCE0915DBA1E200ACD356 /* VIViewController.h */,
 				1ABCCE0A15DBA1E200ACD356 /* VIViewController.m */,
 				1ABCCE0C15DBA1E200ACD356 /* VIViewController.xib */,
+				1ABCCEA415DCC38800ACD356 /* ErrorManager.h */,
+				1ABCCEA515DCC38800ACD356 /* ErrorManager.m */,
 				1ABCCDFE15DBA1E200ACD356 /* Supporting Files */,
 			);
 			path = ErrorHandling;
@@ -165,6 +170,7 @@
 				1ABCCE0415DBA1E200ACD356 /* main.m in Sources */,
 				1ABCCE0815DBA1E200ACD356 /* VIAppDelegate.m in Sources */,
 				1ABCCE0B15DBA1E200ACD356 /* VIViewController.m in Sources */,
+				1ABCCEA615DCC38800ACD356 /* ErrorManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +286,7 @@
 				1ABCCE1315DBA1E200ACD356 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -169,7 +169,7 @@
     // Zoom in to an initial location
     CLLocationCoordinate2D zoomLocation;
     zoomLocation.latitude = 46.1932;
-    zoomLocation.longitude = 9.022501;
+    zoomLocation.longitude = 9.082501;
     
     // View a region of 10km x 10km around the zoomLocation coordinates
     MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(zoomLocation, 10000, 10000);

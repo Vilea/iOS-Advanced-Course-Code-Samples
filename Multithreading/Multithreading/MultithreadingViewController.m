@@ -85,7 +85,6 @@
             NSLog(@"finished");
         };
         
-        
         [queue addOperation:operation];
     }
     else if (version == 2){
@@ -103,6 +102,22 @@
         
 
     }
+  else if (version == 4)
+  {
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+      int i;
+      for (i = 0; i < 5; i++){
+        sleep(1);
+        NSLog(@"[Block] %d", i);
+        
+        dispatch_sync(dispatch_get_main_queue(), ^{
+          //DO SOMETHING WITH THE UI 
+        });
+        
+      }
+    });
+
+  }
 }
 
 - (IBAction)showAlert:(id)sender {
